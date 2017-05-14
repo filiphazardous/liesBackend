@@ -21,6 +21,8 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
+        "drupal/file_entity": "^2.0@beta",
+        "drupal/restui": "^1.14",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3"
@@ -70,6 +72,11 @@
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "patches": {
+            "drupal/file_entity": {
+                "Fix temporary state of uploaded files": "https://www.drupal.org/files/issues/8.x-2.0-beta3_file_entity_save_permanent.patch"
+            }
         }
     }
 }

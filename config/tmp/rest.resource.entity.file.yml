@@ -1,0 +1,18 @@
+dependencies:
+  module:
+    - basic_auth
+    - hal
+    - file_entity
+id: entity.file
+plugin_id: 'entity:file'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - DELETE
+  formats:
+    - hal_json
+  authentication:
+    - basic_auth
+
