@@ -1,0 +1,14 @@
+uuid: 349afb81-4a98-4a2c-9622-98124edcfa99
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - filip@pixiecoder.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

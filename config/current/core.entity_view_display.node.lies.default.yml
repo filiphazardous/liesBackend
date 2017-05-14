@@ -1,0 +1,28 @@
+uuid: 8fc16b15-94f4-46e5-876f-f74b705a7e89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lies.field_image
+    - node.type.lies
+  module:
+    - image
+    - user
+id: node.lies.default
+targetEntityType: node
+bundle: lies
+mode: default
+content:
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

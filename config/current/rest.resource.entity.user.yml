@@ -1,0 +1,16 @@
+uuid: f3c2a295-31a7-406b-ad92-0453d2343ee9
+langcode: en
+status: true
+dependencies: {  }
+id: entity.user
+plugin_id: 'entity:user'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - PATCH
+  formats:
+    - hal_json
+  authentication:
+    - basic_auth

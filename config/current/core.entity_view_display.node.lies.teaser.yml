@@ -1,0 +1,20 @@
+uuid: 50e7a7a2-9a70-4282-bc3d-2dbb2fe1c198
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lies.field_image
+    - node.type.lies
+  module:
+    - user
+id: node.lies.teaser
+targetEntityType: node
+bundle: lies
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_image: true
